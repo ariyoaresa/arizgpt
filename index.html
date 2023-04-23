@@ -1,54 +1,119 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="logo.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ArizGPT- The AI that imitates public figures</title>
     <style>
-        * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: #f2f2f2;
-  font-family: Arial, sans-serif;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 50px 20px;
-  text-align: center;
-}
-
-h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-p {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
+        body{
+            background-color: #ccc;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+        }
+        header{
+            background-color: #333;
+            color: #fff;
+        }
+        header nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        header nav ul{
+            list-style-type: none;
+        }
+        nav ul li{
+            display: inline-block;
+        }
+        nav ul li a{
+            color: #fff;
+            text-decoration: none;
+            transition: 0.3s ease-in-out;
+        }
+        nav ul li a:hover{
+        color: #d1d1d1;
+        }
+        #hero{
+            height: 90vh;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #hero h1{
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        #hero p{
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+        #hero button{
+            background-color: #333;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            font-size: 12px;
+            text-transform: uppercase;
+            padding: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.9);
+        }
+        #about{
+            text-align: center;
+        }
+        footer{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 7px;
+            bottom: 2px;
+        }
+        #about h2{
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+        #about p{
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
     </style>
-  </head>
-  <body>
-    <div class="container">
-        <h1>Welcome to ArizGPT</h1>
-        <p>We're here to help you with any questions or concerns you may have. Just click on the chat icon below, type in your message below and we'll respond as soon as possible.</p>
-    </div>
+    <title>ArizGPT - The A.I that imitates public figures</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>ArizGPT - The A.I that imitates public figures</h1>
+            <p>Experience the power of ArizGPT, the artificial intelligence language model that can imitate the writing style of public figures such as actors, politicians and authors.</p>
+            <button>click the chat icon on the right bottom corner to get started now</button>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>ArizGPT is an artificial intelligence based on the GPT architechture. It has been trained on a diverse range of text including speeches, books and articles, to enable it to imitate public figures with a high degree of accuracy.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 ArizGPT. All right reserved</p>
+    </footer>
     <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
-<script>
-  window.botpressWebChat.init({
-      "botId": "f746ffc7-df59-4bc4-99d8-20705f32c32a",
-      "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
-      "messagingUrl": "https://messaging.botpress.cloud",
-      "clientId": "f746ffc7-df59-4bc4-99d8-20705f32c32a",
-      "botName": "ArizGPT"
-  });
-</script>
-  </body>
+    <script>
+        window.botpressWebChat.init({
+            "botId": "f746ffc7-df59-4bc4-99d8-20705f32c32a",
+            "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
+            "messagingUrl": "https://messaging.botpress.cloud",
+            "clientId": "f746ffc7-df59-4bc4-99d8-20705f32c32a",
+            "botName": "ArizGPT"
+        });
+      </script>
+</body>
 </html>
